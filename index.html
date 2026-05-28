@@ -29,15 +29,19 @@
     </header>
 
     <nav class="navbar">
-        <div class="nav-links">
-            <a href="#home-section">HOME</a>
-            <a href="#doctors-section">ABOUT US</a>
-            <a href="#services-section">SERVICES</a>
-            <a href="#why-choose-section">GALLERY</a>
-            <a href="#blog-section">BLOG</a>
-            <a href="#why-choose-section">CONTACT US</a>
+        <div class="unique-nav-row">
+            <a href="#home-section" class="single-menu-item active-link">HOME</a>
+            <a href="#doctors-section" class="single-menu-item"><div class="hero-image-area"></div>ABOUT US</a>
+            <a href="#services-section" class="single-menu-item">SERVICES</a>
+            <a href="#why-choose-section" class="single-menu-item">GALLERY</a>
+            <a href="#blog-section" class="single-menu-item">BLOG</a>
+            <a href="#why-choose-section" class="single-menu-item">CONTACT US</a>
         </div>
-        <a href="https://wa.me/919443702042" target="_blank" class="btn-appointment">BOOK APPOINTMENT</a>
+        
+        <!-- Action Button with Calendar Icon -->
+        <a href="https://wa.me/919443702042" target="_blank" class="btn-appointment">
+            📅 BOOK APPOINTMENT
+        </a>
     </nav>
 
     <section class="hero-section">
@@ -90,57 +94,66 @@
         </div>
     </section>
 
-    <section class="services-section" id="services-section">
-        <div class="section-header">
-            <span class="section-subtitle">— OUR SERVICES —</span>
-            <h2 class="section-title">Comprehensive Dental Care for Your Family</h2>
-            <div class="leaf-separator">🍃</div>
+<!-- ==========================================================================
+     OUR SERVICES SECTION
+     ========================================================================== -->
+<section id="services-section" style="padding: 60px 0; background-color: #f9f9f9; text-align: center;">
+    <div style="margin-bottom: 40px;">
+        <span style="color: #1b4d3e; font-weight: bold; letter-spacing: 2px; text-transform: uppercase;">— OUR SERVICES —</span>
+        <h2 style="color: #0f2d24; margin-top: 10px; font-size: 2rem;">Comprehensive Dental Care for Your Family</h2>
+    </div>
+
+    <div class="services-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        
+        <!-- Card 1: Dental Implants -->
+        <div class="service-card">
+            <div style="font-size: 40px; margin-bottom: 15px;">🦷</div>
+            <h3 style="color: #0f2d24; margin: 10px 0; font-size: 1.3rem;">Dental Implants</h3>
+            <p style="color: #666666; font-size: 0.95rem; line-height: 1.5;">Strong, natural-looking replacements for missing teeth.</p>
         </div>
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon">🦷</div>
-                <div class="service-text">
-                    <h4>Dental Implants</h4>
-                    <p>Strong, natural-looking replacements for missing teeth.</p>
-                </div>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">⚡</div>
-                <div class="service-text">
-                    <h4>Root Canal Treatment</h4>
-                    <p>Relieve pain and save your natural teeth with advanced care.</p>
-                </div>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">✨</div>
-                <div class="service-text">
-                    <h4>Smile Design</h4>
-                    <p>Enhance your smile with customized smile makeovers.</p>
-                </div>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">💎</div>
-                <div class="service-text">
-                    <h4>Teeth Whitening</h4>
-                    <p>Brighter, whiter smiles with safe and effective treatments.</p>
-                </div>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">🧸</div>
-                <div class="service-text">
-                    <h4>Pediatric Dentistry</h4>
-                    <p>Gentle and friendly dental care for your little ones.</p>
-                </div>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">😷</div>
-                <div class="service-text">
-                    <h4>Oral Surgery</h4>
-                    <p>Expert care for complex dental and jaw-related issues.</p>
-                </div>
-            </div>
+
+        <!-- Card 2: Root Canal Treatment -->
+        <div class="service-card">
+            <div style="font-size: 40px; margin-bottom: 15px;">🦷</div>
+            <h3 style="color: #0f2d24; margin: 10px 0; font-size: 1.3rem;">Root Canal Treatment</h3>
+            <p style="color: #666666; font-size: 0.95rem; line-height: 1.5;">Relieve pain and save your natural teeth with advanced care.</p>
         </div>
-    </section>
+
+        <!-- Card 3: Smile Design -->
+        <div class="service-card">
+            <div style="font-size: 40px; margin-bottom: 15px;">✨</div>
+            <h3 style="color: #0f2d24; margin: 10px 0; font-size: 1.3rem;">Smile Design</h3>
+            <p style="color: #666666; font-size: 0.95rem; line-height: 1.5;">Enhance your smile with customized smile makeovers.</p>
+        </div>
+
+        <!-- Card 4: Teeth Whitening -->
+        <div class="service-card">
+            <div style="font-size: 40px; margin-bottom: 15px;">💎</div>
+            <h3 style="color: #0f2d24; margin: 10px 0; font-size: 1.3rem;">Teeth Whitening</h3>
+            <p style="color: #666666; font-size: 0.95rem; line-height: 1.5;">Brighter, whiter smiles with safe and effective treatments.</p>
+        </div>
+
+        <!-- Card 5: Pediatric Dentistry -->
+        <div class="service-card">
+            <div style="font-size: 40px; margin-bottom: 15px;">🧸</div>
+            <h3 style="color: #0f2d24; margin: 10px 0; font-size: 1.3rem;">Pediatric Dentistry</h3>
+            <p style="color: #666666; font-size: 0.95rem; line-height: 1.5;">Gentle and friendly dental care for your little ones.</p>
+        </div>
+
+        <!-- Card 6: Oral Surgery -->
+        <div class="service-card">
+            <div style="font-size: 40px; margin-bottom: 15px;">🏥</div>
+            <h3 style="color: #0f2d24; margin: 10px 0; font-size: 1.3rem;">Oral Surgery</h3>
+            <p style="color: #666666; font-size: 0.95rem; line-height: 1.5;">Expert care for complex dental and jaw-related issues.</p>
+        </div>
+
+    </div>
+</section>
+
+    <div class="animated-card" style="background: #1b4d3e; color: white; padding: 40px; border-radius: 12px; text-align: center; margin: 30px auto; max-width: 1100px; transition: 0.3s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+        <h3 style="margin: 0 0 10px 0;">✨ Ready for a Healthier Smile? ✨</h3>
+        <p style="margin: 0;">Hover your mouse here to see this card zoom and animate!</p>
+    </div>
 
     <section class="why-choose-section" id="why-choose-section">
         <div class="section-header">

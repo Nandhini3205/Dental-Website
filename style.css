@@ -15,6 +15,23 @@ html {
    font-family: 'Georgia', serif; 
 }
 
+body {/* ==========================================================================
+   0. SMOOTH SCROLLING EFFECT
+   ========================================================================== */
+html {
+   scroll-behavior: smooth;
+}
+
+/* ==========================================================================
+   1. BASE RESET & BODY STYLES
+   ========================================================================== */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Georgia', serif; 
+}
+
 body {
    background-color: #fcfbfa; 
    color: #333;
@@ -568,4 +585,649 @@ body {
    border-radius: 4px;
    border: 1px solid #cccccc;
    display: inline-block;
+}
+/* ==========================================================================
+   CLEAN DESIGN MENU ALIGNMENT & UNIFIED BUTTON HOVER COLORS
+   ========================================================================== */
+
+/* Align the navigation bar items cleanly in a horizontal line */
+.navbar {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    position: relative !important;
+    width: 100% !important;
+    max-width: 1100px !important;
+    margin: 0 auto !important;
+    padding: 10px 0 !important;
+    background-color: #ffffff !important;
+}
+
+/* Horizontal structure and spacing for menu links */
+.unique-nav-row {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 35px !important; /* Premium spacing between links */
+}
+
+/* Typography styles for navigation items */
+.single-menu-item {
+    text-decoration: none !important;
+    color: #555555 !important;
+    font-family: Arial, sans-serif !important; 
+    font-size: 0.85rem !important;
+    font-weight: bold !important;
+    position: relative !important;
+    padding: 8px 0 !important;
+    transition: color 0.2s ease !important;
+}
+
+/* Hover link color change - Beautiful Clinic Green */
+.single-menu-item:hover {
+    color: #1b4d3e !important; 
+}
+
+/* Elegant highlight line underneath the HOME link */
+.active-link::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 25% !important;
+    width: 50% !important;
+    height: 2px !important;
+    background-color: #1b4d3e !important;
+}
+
+/* ==========================================================================
+   BUTTON HOVER FIXES
+   ========================================================================== */
+
+/* 1. Upper Nav Button Hover */
+.btn-appointment:hover {
+    background-color: #143a2e !important; /* Deep elegant dark green */
+    color: #ffffff !important;
+}
+
+/* 2. Lower Text Box Button Hover (The one inside the hero section text) */
+.btn-sub-appointment:hover {
+    background-color: #143a2e !important; 
+    color: #ffffff !important;
+    border-color: #143a2e !important;
+}
+
+/* 3. Lower WhatsApp Button Hover */
+.btn-whatsapp:hover {
+    background-color: #143a2e !important; 
+    color: #ffffff !important;
+}
+   background-color: #fcfbfa; 
+   color: #333;
+}
+
+/* ==========================================================================
+   2. TOP CLINIC HEADER
+   ========================================================================== */
+.main-header {
+   padding: 20px 40px;
+   background-color: #fcfbfa;
+}
+
+.header-container {
+   display: flex;
+   justify-content: space-between; 
+   align-items: center;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.doctor-info {
+   flex: 1;
+}
+
+.doctor-info h3 {
+   font-size: 1.1rem;
+   color: #1a1a1a;
+   font-weight: bold;
+}
+
+.doctor-info .degree { font-size: 0.85rem; }
+
+.doctor-info .specialty {
+   font-size: 0.85rem;
+   color: #555;
+   margin-top: 4px;
+   font-style: italic;
+}
+
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.logo-area {
+   flex: 1.5;
+   text-align: center;
+}
+
+.text-logo-icon {
+   font-size: 1.8rem;
+   color: #1b4d3e;
+   margin-bottom: 2px;
+}
+
+.text-logo-title {
+   font-size: 1.7rem;
+   letter-spacing: 1.5px;
+   color: #1b4d3e;
+   font-weight: bold;
+}
+
+.text-logo-tagline {
+   font-size: 0.85rem;
+   color: #b58c44;
+   font-style: italic;
+   font-weight: bold;
+   margin-top: 3px;
+   letter-spacing: 0.5px;
+}
+
+/* ==========================================================================
+   3. NAVIGATION BAR
+   ========================================================================== */
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #ffffff;
+   padding: 10px 40px;
+   border-top: 1px solid #eaeaea;
+   border-bottom: 1px solid #eaeaea;
+   max-width: 1200px;
+   margin: 0 auto;
+   position: sticky;
+   top: 0;
+   z-index: 999;
+}
+
+.nav-links a {
+   text-decoration: none;
+   color: #444;
+   font-family: Arial, sans-serif; 
+   font-size: 0.85rem;
+   font-weight: bold;
+   margin-right: 25px;
+   transition: color 0.3s;
+}
+
+.nav-links a:hover { color: #1b4d3e; }
+
+/* ==========================================================================
+   4. HERO BANNER
+   ========================================================================== */
+.hero-section {
+   background-color: #fcfbfa;
+   padding: 50px 40px;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.hero-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 40px;
+}
+
+.hero-content { flex: 1; }
+
+.hero-title {
+   font-size: 3.5rem;
+   color: #1b4d3e; 
+   line-height: 1.1;
+   font-weight: bold;
+   margin-bottom: 15px;
+}
+
+.leaf-icon {
+   font-size: 1.2rem;
+   color: #3b6643;
+   margin-bottom: 15px;
+}
+
+.hero-description {
+   font-family: Arial, sans-serif;
+   font-size: 1.05rem;
+   line-height: 1.6;
+   color: #555;
+   margin-bottom: 30px;
+}
+
+.hero-buttons {
+   display: flex;
+   gap: 15px;
+}
+
+.hero-image-area {
+   flex: 1.3;
+   display: flex;
+   justify-content: center;
+}
+
+.hero-main-img {
+   width: 100%;
+   max-width: 580px;
+   height: 360px;
+   object-fit: cover;
+   border-radius: 12px;
+}
+
+.fallback-hero-box {
+   width: 100%;
+   max-width: 550px;
+   height: 320px;
+   background-color: #e2ece9;
+   border-radius: 12px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border: 2px dashed #1b4d3e;
+   color: #1b4d3e;
+}
+
+.hero-box-icon { font-size: 3.5rem; margin-bottom: 15px; }
+.fallback-hero-box h3 { font-size: 1.5rem; margin-bottom: 5px; }
+.fallback-hero-box p { font-family: Arial, sans-serif; font-size: 0.95rem; opacity: 0.8; }
+
+/* ==========================================================================
+   5. SHARED HEADINGS
+   ========================================================================== */
+.section-subtitle {
+   font-family: Arial, sans-serif;
+   font-size: 0.85rem;
+   color: #b58c44; 
+   letter-spacing: 2px;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+.section-title {
+   font-size: 2rem;
+   color: #1b4d3e;
+   margin-top: 5px;
+}
+
+.leaf-separator { font-size: 1rem; margin: 10px 0 30px 0; }
+
+/* ==========================================================================
+   6. OUR DOCTORS CARDS
+   ========================================================================== */
+.doctors-section {
+   padding: 60px 40px;
+   max-width: 1200px;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.doctors-container {
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+   flex-wrap: wrap;
+   margin-top: 20px;
+}
+
+.doctor-card {
+   background-color: #ffffff;
+   border: 1px solid #eaeaea;
+   border-radius: 12px;
+   display: flex;
+   align-items: center;
+   padding: 20px;
+   width: 100%;
+   max-width: 480px;
+   text-align: left;
+   box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.doc-img {
+   width: 110px;
+   height: 110px;
+   object-fit: cover;
+   border-radius: 50%;
+   margin-right: 20px;
+   border: 2px solid #1b4d3e;
+   flex-shrink: 0;
+}
+
+.doc-card-details h4 { font-size: 1.15rem; color: #222; }
+.degree-small { font-size: 0.9rem; color: #666; }
+.doc-card-specialty { font-family: Arial, sans-serif; font-size: 0.9rem; color: #666; margin-top: 4px; }
+.mini-leaf { display: inline-block; font-size: 0.8rem; margin-top: 8px; }
+
+/* ==========================================================================
+   7. OUR SERVICES GRID
+   ========================================================================== */
+.services-section {
+   padding: 60px 40px;
+   max-width: 1200px;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.services-grid {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr); 
+   gap: 25px; 
+   margin-top: 20px;
+}
+
+.service-card {
+   display: flex;
+   align-items: flex-start;
+   padding: 25px 20px;
+   background-color: #ffffff;
+   border: 1px solid #eaeaea;
+   border-radius: 8px;
+   text-align: left;
+   box-shadow: 0 4px 10px rgba(0,0,0,0.01);
+}
+
+.service-icon { font-size: 2rem; margin-right: 15px; line-height: 1; }
+.service-text h4 { font-size: 1.1rem; color: #1b4d3e; margin-bottom: 6px; }
+.service-text p { font-family: Arial, sans-serif; font-size: 0.88rem; color: #666; line-height: 1.5; }
+
+/* ==========================================================================
+   8. WHY CHOOSE US & CLINIC INFO GRID
+   ========================================================================== */
+.why-choose-section {
+   padding: 60px 40px;
+   max-width: 1200px;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.why-choose-main-layout {
+   display: flex;
+   gap: 30px;
+   align-items: center;
+   margin: 40px 0;
+   text-align: left;
+}
+
+.interior-pic-box { flex: 1.2; }
+.interior-img { width: 100%; height: 280px; object-fit: cover; border-radius: 8px; }
+.features-grid-layout { flex: 1.8; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+.feature-item { padding: 10px; }
+.feature-icon { font-size: 2.2rem; margin-bottom: 12px; }
+.feature-item h4 { font-size: 1.1rem; color: #1a1a1a; margin-bottom: 8px; }
+.feature-item p { font-family: Arial, sans-serif; font-size: 0.85rem; color: #666; line-height: 1.4; }
+
+.info-split-grid {
+   display: grid;
+   grid-template-columns: 1fr 1.2fr 1fr; 
+   gap: 30px;
+   margin-top: 40px;
+}
+
+.info-panel { background-color: #ffffff; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.02); overflow: hidden; }
+
+.address-card { background-color: #1b4d3e; color: #ffffff; padding: 30px; text-align: left; }
+.address-card .panel-heading { font-size: 1.2rem; letter-spacing: 1px; margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 10px; }
+.contact-detail-item { display: flex; align-items: flex-start; margin-bottom: 20px; }
+.geo-icon { font-size: 1.2rem; margin-right: 15px; margin-top: 2px; }
+.contact-detail-item p { font-family: Arial, sans-serif; font-size: 0.9rem; line-height: 1.5; color: #e2ece9; }
+
+.btn-directions {
+   display: inline-block; border: 1px solid #ffffff; color: #ffffff; text-decoration: none; 
+   padding: 10px 20px; font-family: Arial, sans-serif; font-size: 0.8rem; font-weight: bold; border-radius: 4px; margin-top: 10px;
+}
+
+.booking-card { padding: 40px 30px; display: flex; flex-direction: column; justify-content: center; background-color: #f4f8f6; border: 1px dashed #1b4d3e; text-align: left; }
+.booking-card h4 { font-size: 1.4rem; color: #1b4d3e; margin-bottom: 12px; }
+.booking-card p { font-family: Arial, sans-serif; font-size: 0.9rem; color: #555; line-height: 1.5; margin-bottom: 25px; }
+
+/* ==========================================================================
+   8B. NEW CLINIC BLOG SECTION
+   ========================================================================== */
+.blog-section {
+   padding: 60px 40px;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.blog-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 30px;
+   margin-top: 20px;
+}
+
+.blog-card {
+   background-color: #ffffff;
+   border: 1px solid #eaeaea;
+   border-radius: 8px;
+   padding: 30px;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.01);
+   position: relative;
+}
+
+.blog-badge {
+   display: inline-block;
+   background-color: #e2ece9;
+   color: #1b4d3e;
+   font-family: Arial, sans-serif;
+   font-size: 0.75rem;
+   font-weight: bold;
+   padding: 4px 10px;
+   border-radius: 20px;
+   margin-bottom: 15px;
+}
+
+.blog-card h4 { font-size: 1.3rem; color: #1b4d3e; margin-bottom: 10px; }
+.blog-card p { font-family: Arial, sans-serif; font-size: 0.9rem; color: #666; line-height: 1.6; margin-bottom: 20px; }
+.read-more-link { text-decoration: none; color: #b58c44; font-weight: bold; font-family: Arial, sans-serif; font-size: 0.85rem; }
+
+/* ==========================================================================
+   9. TESTIMONIALS REVIEWS (3 Columns layout)
+   ========================================================================== */
+.testimonials-section {
+   padding: 60px 40px;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.testimonials-container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+   margin-top: 30px;
+}
+
+.testimonial-card {
+   background-color: #ffffff;
+   border: 1px solid #eaeaea;
+   padding: 25px;
+   border-radius: 12px;
+   text-align: center;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.01);
+}
+
+.rating-stars { color: #ffb400; font-size: 0.9rem; margin-bottom: 12px; }
+.review-text { font-family: Arial, sans-serif; font-size: 0.88rem; color: #444; line-height: 1.6; font-style: italic; margin-bottom: 15px; }
+.patient-name { font-size: 0.9rem; color: #1b4d3e; font-weight: bold; }
+
+/* ==========================================================================
+   10. EXPERT GREEN FOOTER (4-Columns Layout)
+   ========================================================================== */
+.main-footer {
+   background-color: #0b2e24; 
+   color: #ffffff;
+   padding: 60px 40px 20px 40px;
+   margin-top: 60px;
+}
+
+.footer-grid-container {
+   display: grid;
+   grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+   gap: 40px;
+   max-width: 1200px;
+   margin: 0 auto;
+   text-align: left;
+}
+
+.footer-logo-layout { display: flex; align-items: center; gap: 8px; margin-bottom: 5px; }
+.footer-logo-layout .f-icon { font-size: 1.3rem; }
+.footer-logo-layout h4 { font-size: 1.2rem; letter-spacing: 1px; color: #ffffff; font-weight: bold; }
+.brand-subtext { font-size: 0.8rem; color: #b58c44; font-style: italic; font-weight: bold; margin-bottom: 15px; }
+.brand-desc-p { font-family: Arial, sans-serif; font-size: 0.85rem; color: #a3b8b1; line-height: 1.5; margin-bottom: 20px; }
+.social-icons span { font-size: 1.2rem; margin-right: 12px; cursor: pointer; }
+
+.footer-col h4 {
+   font-family: Arial, sans-serif;
+   font-size: 0.9rem;
+   letter-spacing: 1px;
+   color: #ffffff;
+   margin-bottom: 20px;
+   font-weight: bold;
+}
+
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: 10px; }
+.footer-col ul li a {
+   text-decoration: none;
+   font-family: Arial, sans-serif;
+   font-size: 0.85rem;
+   color: #a3b8b1;
+   transition: color 0.3s;
+}
+.footer-col ul li a:hover { color: #ffffff; }
+
+.contact-col p {
+   font-family: Arial, sans-serif;
+   font-size: 0.85rem;
+   color: #a3b8b1;
+   line-height: 1.6;
+   margin-bottom: 12px;
+}
+
+.footer-bottom-bar {
+   max-width: 1200px;
+   margin: 40px auto 0 auto;
+   border-top: 1px solid rgba(255, 255, 255, 0.1);
+   padding-top: 20px;
+   display: flex;
+   justify-content: space-between;
+   font-family: Arial, sans-serif;
+   font-size: 0.8rem;
+   color: #a3b8b1;
+}
+
+.bottom-legal-links a { text-decoration: none; color: #a3b8b1; margin: 0 5px; }
+.bottom-legal-links a:hover { color: #ffffff; }
+
+
+/* ==========================================================================
+   11. NEW INTERACTIVE BUTTON SLIDE ANIMATIONS
+   ========================================================================== */
+.btn-appointment, .btn-sub-appointment, .btn-whatsapp, .btn-panel-whatsapp {
+   position: relative;
+   overflow: hidden;
+   z-index: 1;
+   transition: color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.4s ease;
+}
+
+.btn-appointment::before, .btn-sub-appointment::before, .btn-whatsapp::before, .btn-panel-whatsapp::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: -100%;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   transition: left 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Green headers buttons flip to custom gold accents */
+.btn-appointment::before { background-color: #b58c44; }
+.btn-whatsapp::before { background-color: #b58c44; }
+.btn-panel-whatsapp::before { background-color: #b58c44; }
+
+/* The white sub-button flips to brand deep green */
+.btn-sub-appointment::before { background-color: #1b4d3e; }
+
+/* Active Hover Transitions */
+.btn-appointment:hover::before, 
+.btn-whatsapp:hover::before, 
+.btn-panel-whatsapp:hover::before, 
+.btn-sub-appointment:hover::before {
+   left: 0;
+}
+
+.btn-appointment:hover, 
+.btn-whatsapp:hover, 
+.btn-panel-whatsapp:hover, 
+.btn-sub-appointment:hover {
+   color: #ffffff !important;
+}
+
+.btn-sub-appointment:hover {
+   border-color: #1b4d3e;
+}
+
+/* Base button structures ensuring correct dimensions */
+.btn-appointment {
+   background-color: #1b4d3e; 
+   color: #ffffff;
+   text-decoration: none;
+   padding: 10px 20px;
+   font-family: Arial, sans-serif;
+   font-size: 0.85rem;
+   font-weight: bold;
+   border-radius: 4px;
+   display: inline-block;
+}
+
+.btn-whatsapp {
+   background-color: #0b4c37; 
+   color: #ffffff;
+   text-decoration: none;
+   padding: 14px 24px;
+   font-family: Arial, sans-serif;
+   font-size: 0.85rem;
+   font-weight: bold;
+   border-radius: 4px;
+   display: inline-flex;
+   align-items: center;
+   gap: 8px;
+}
+
+.btn-sub-appointment {
+   background-color: #ffffff;
+   color: #333333;
+   text-decoration: none;
+   padding: 14px 24px;
+   font-family: Arial, sans-serif;
+   font-size: 0.85rem;
+   font-weight: bold;
+   border-radius: 4px;
+   border: 1px solid #cccccc;
+   display: inline-block;
+}
+/* ==========================================================================
+   VIBRANT MENU HOVER & BUTTON TEXT PROTECTION
+   ========================================================================== */
+
+/* 1. Turns ONLY the text links into the vibrant green when hovered */
+.unique-nav-row a.single-menu-item:hover,
+a.single-menu-item:hover {
+    color: #20bc7e !important; /* Vibrant green link text */
+}
+
+/* 2. PROTECTS the top button so the text letters inside stay crisp white */
+a.btn-appointment:hover,
+.btn-appointment:hover {
+    color: #ffffff !important; /* Keeps the text letters pure white */
+    background-color: #0f2d24 !important; /* Keeps the solid dark green background */
 }
